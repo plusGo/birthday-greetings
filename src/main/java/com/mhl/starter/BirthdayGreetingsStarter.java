@@ -3,18 +3,17 @@ package com.mhl.starter;
 import com.mhl.App;
 import com.mhl.logger.Logger;
 import com.mhl.model.Employee;
+import com.mhl.parser.EmployeeParser;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class BirthdayGreetingsStarter {
     private final static Logger logger = new Logger();
@@ -50,33 +49,10 @@ public class BirthdayGreetingsStarter {
 
         String str;
         while ((str = bufferedReader.readLine()) != null) {
-            allEmployees.add(employeeRecordParser(str));
+            allEmployees.add(EmployeeParser.parseRecord(str));
         }
         return allEmployees;
     }
 
-    private Employee employeeRecordParser(final String employeeRecord) {
-        final Employee employee = new Employee();
-        Stream.of(employeeRecord.split(","))
-                .map(String::trim)
-                .forEach((record) -> {
-                    if (Objects.isNull(employee.getLastName())) {
-                        employee.setLastName(record);
-                        return;
-                    }
-                    if (Objects.isNull(employee.getFirstName())) {
-                        employee.setFirstName(record);
-                        return;
-                    }
-                    if (Objects.isNull(employee.getDateOfBirth())) {
-                        employee.setDateOfBirth(LocalDate.parse(record, DateTimeFormatter.ofPattern("yyyy/MM/dd")));
-                        return;
-                    }
-                    if (Objects.isNull(employee.getEmail())) {
-                        employee.setEmail(record);
-                    }
-                });
-        return employee;
-    }
 
 }
