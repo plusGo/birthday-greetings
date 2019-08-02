@@ -4,7 +4,7 @@ import com.mhl.logger.Logger;
 import com.mhl.service.EmployeeService;
 import com.mhl.starter.BirthdayGreetingsStarter;
 
-public class BeanFactory {
+public class SingleBeanFactory {
     private final static EmployeeService employeeService = new EmployeeService();
     private final static Logger logger = new Logger();
     private final static BirthdayGreetingsStarter birthdayGreetingsStarter = new BirthdayGreetingsStarter();

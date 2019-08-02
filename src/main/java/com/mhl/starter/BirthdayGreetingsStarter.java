@@ -1,6 +1,6 @@
 package com.mhl.starter;
 
-import com.mhl.factory.BeanFactory;
+import com.mhl.factory.SingleBeanFactory;
 import com.mhl.logger.Logger;
 import com.mhl.service.EmployeeService;
 
@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 public class BirthdayGreetingsStarter {
-    private final static Logger logger = BeanFactory.getLogger();
-    private EmployeeService employeeService = BeanFactory.getEmployeeService();
+    private final static Logger logger = SingleBeanFactory.getLogger();
+    private EmployeeService employeeService = SingleBeanFactory.getEmployeeService();
 
     public void run() {
         try {

@@ -1,7 +1,7 @@
 package com.mhl.service;
 
 import com.mhl.Application;
-import com.mhl.factory.BeanFactory;
+import com.mhl.factory.SingleBeanFactory;
 import com.mhl.logger.Logger;
 import com.mhl.model.Employee;
 import com.mhl.parser.EmployeeParser;
@@ -17,7 +17,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class EmployeeService {
-    final private static Logger logger = BeanFactory.getLogger();
+    final private static Logger logger = SingleBeanFactory.getLogger();
 
     public void sendGreetingEmail(final Employee employee) {
         System.out.println("Subject:Happy Birthday");
