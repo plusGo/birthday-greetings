@@ -1,7 +1,7 @@
 package com.mhl.service;
 
 import com.mhl.Application;
-import com.mhl.factory.BeanFactory;
+import com.mhl.factory.SingleBeanFactory;
 import com.mhl.logger.Logger;
 import com.mhl.model.Employee;
 import com.mhl.parser.EmployeeParser;
@@ -17,12 +17,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class EmployeeService {
-    final private static Logger logger = BeanFactory.getLogger();
-
-    public void sendGreetingEmail(final Employee employee) {
-        System.out.println("Subject:Happy Birthday");
-        System.out.println(String.format("Happy Birthday,dear %s", employee.getFirstName()));
-    }
+    final private static Logger logger = SingleBeanFactory.getLogger();
 
     public List<Employee> findEmployeesByBirthday(final LocalDate birthday) throws IOException {
         return this.loadAllEmployees()
@@ -36,7 +31,7 @@ public class EmployeeService {
 
         final InputStream inputStream = Application.class.getClassLoader().getResourceAsStream("employee_records.txt");
         if (Objects.isNull(inputStream)) {
-            logger.error("员工数据文件不存在");
+            logger.error("employee_records.txt not exist");
             throw new RuntimeException();
         }
 
