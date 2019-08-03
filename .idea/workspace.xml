@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60f0d95b-ed57-493e-b21d-447414c68153" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mhl/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mhl/ApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mhl/starter/BirthdayGreetingsStarterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mhl/MockitoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mhl/service/EmailServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhl/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhl/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhl/factory/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhl/factory/SingleBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhl/parser/EmployeeParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhl/parser/EmployeeParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhl/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhl/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mhl/starter/BirthdayGreetingsStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mhl/starter/BirthdayGreetingsStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/employee_records.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/employee_records.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/employee_records.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/employee_records.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mhl/starter/BirthdayGreetingsStarterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mhl/starter/BirthdayGreetingsStarterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,14 +23,16 @@
     <session id="231265421">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="class" value="1" />
+          <entry key="java" value="11" />
           <entry key="txt" value="1" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="11" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="2" />
         </counts>
@@ -46,15 +40,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="681" />
-          <entry key="txt" value="1" />
+          <entry key="java" value="980" />
+          <entry key="txt" value="29" />
           <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="681" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="JAVA" value="980" />
+          <entry key="PLAIN_TEXT" value="38" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
@@ -63,19 +57,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/starter/BirthdayGreetingsStarter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="184">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,39 +68,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/starter/BirthdayGreetingsStarterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="526">
+              <caret line="39" column="35" selection-start-line="39" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/employee_records.txt">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/Matchers.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="192">
+              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+              <folding>
+                <element signature="e#2188#2189#0" expanded="true" />
+                <element signature="e#2250#2251#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/factory/SingleBeanFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/MockitoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="162">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,8 +117,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/service/EmailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="135">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/service/EmailServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,10 +138,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="162">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/model/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#417#418#0" expanded="true" />
+                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#823#824#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,22 +178,10 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/ApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
+                <element signature="e#213#214#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/logger/Logger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding>
-                <element signature="e#92#93#0" expanded="true" />
-                <element signature="e#168#169#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,8 +192,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -212,7 +220,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/employee_records.txt" />
         <option value="$PROJECT_DIR$/src/test/java/com/mhl/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhl/MockitoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mhl/starter/BirthdayGreetingsStarterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mhl/service/EmailServiceTest.java" />
       </list>
     </option>
   </component>
@@ -274,6 +284,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mhl" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="birthdaygreetings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-school" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mhl" type="462c0819:PsiDirectoryNode" />
               <item name="starter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -304,6 +323,24 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mhl" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="birthdaygreetings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-school" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mhl" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="birthdaygreetings" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-school" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mhl" type="462c0819:PsiDirectoryNode" />
+              <item name="starter" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -316,7 +353,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564799059396" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564799936889" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -330,6 +367,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.mhl.service" />
       <recent name="com.mhl.starter" />
       <recent name="com.mhl" />
     </key>
@@ -468,7 +506,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BirthdayGreetingsStarterTest.run">
+  <component name="RunManager" selected="JUnit.EmailServiceTest.should_send_greeting_email_success">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mhl.Application" />
       <module name="birthday-greetings" />
@@ -514,13 +552,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EmailServiceTest.should_send_greeting_email_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-school" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mhl.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mhl.service" />
+      <option name="MAIN_CLASS_NAME" value="com.mhl.service.EmailServiceTest" />
+      <option name="METHOD_NAME" value="should_send_greeting_email_success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Application" />
       <item itemvalue="JUnit.ApplicationTest.execute_starter_when_main_func_start" />
       <item itemvalue="JUnit.BirthdayGreetingsStarterTest.run" />
+      <item itemvalue="JUnit.EmailServiceTest.should_send_greeting_email_success" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EmailServiceTest.should_send_greeting_email_success" />
         <item itemvalue="JUnit.BirthdayGreetingsStarterTest.run" />
         <item itemvalue="JUnit.ApplicationTest.execute_starter_when_main_func_start" />
       </list>
@@ -539,42 +595,50 @@
       <workItem from="1564669244114" duration="4759000" />
       <workItem from="1564721931736" duration="2506000" />
     </task>
+    <task id="LOCAL-00001" summary="#comment starter test">
+      <created>1564799146790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564799146790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTest_execute_starter_when_main_func_start - 2019.08.03 at 10h 13m 02s.xml">
-      <configuration name="ApplicationTest.execute_starter_when_main_func_start" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 18m 07s.xml">
-      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 19m 27s.xml">
-      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 19m 33s.xml">
-      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 21m 07s.xml">
-      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 21m 16s.xml">
-      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 21m 22s.xml">
-      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 21m 59s.xml">
-      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 22m 17s.xml">
-      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 22m 48s.xml">
       <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 22m 59s.xml">
+      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 24m 09s.xml">
+      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 24m 21s.xml">
+      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 26m 40s.xml">
+      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTest_execute_starter_when_main_func_start - 2019.08.03 at 10h 26m 52s.xml">
+      <configuration name="ApplicationTest.execute_starter_when_main_func_start" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 28m 16s.xml">
+      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BirthdayGreetingsStarterTest_run - 2019.08.03 at 10h 28m 28s.xml">
+      <configuration name="BirthdayGreetingsStarterTest.run" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmailServiceTest_should_send_greeting_email_success - 2019.08.03 at 10h 33m 51s.xml">
+      <configuration name="EmailServiceTest.should_send_greeting_email_success" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmailServiceTest_should_send_greeting_email_success - 2019.08.03 at 10h 34m 05s.xml">
+      <configuration name="EmailServiceTest.should_send_greeting_email_success" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10455000" />
+    <option name="totallyTimeSpent" value="11339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -589,8 +653,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3277592" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39910814" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3277592" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910814" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -616,12 +680,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#comment starter test" />
+    <option name="LAST_COMMIT_MESSAGE" value="#comment starter test" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mhl/starter/BirthdayGreetingsStarterTest.java</url>
-          <line>29</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -722,31 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/parser/EmployeeParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -790,26 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#251#252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -829,25 +852,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/starter/BirthdayGreetingsStarter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="184">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/service/EmailService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/MockitoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar!/org/mockito/Matchers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+          <folding>
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2250#2251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mhl/service/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/starter/BirthdayGreetingsStarterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="526">
+          <caret line="39" column="35" selection-start-line="39" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mhl/service/EmailServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,22 +1,20 @@
 package com.mhl.starter;
 
 import com.google.common.collect.ImmutableList;
+import com.mhl.MockitoTest;
 import com.mhl.model.Employee;
 import com.mhl.service.EmailService;
 import com.mhl.service.EmployeeService;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
 
 import java.io.IOException;
 import java.time.LocalDate;
 
 import static org.mockito.Mockito.*;
 
-@RunWith(MockitoJUnitRunner.class)
-public class BirthdayGreetingsStarterTest {
+public class BirthdayGreetingsStarterTest extends MockitoTest {
     @InjectMocks
     BirthdayGreetingsStarter birthdayGreetingsStarter;
     @Mock
@@ -25,7 +23,7 @@ public class BirthdayGreetingsStarterTest {
     private EmployeeService employeeService;
 
     @Test
-    public void run() throws IOException {
+    public void should_run() throws IOException {
         // given
         final Employee employee1 = new Employee();
         final Employee employee2 = new Employee();
@@ -39,6 +37,7 @@ public class BirthdayGreetingsStarterTest {
 
         // then
         verify(employeeService, times(1)).findEmployeesByBirthday(localDate);
-        verify(emailService, times(2)).sendGreetingEmail(any(Employee.class));
+        verify(emailService, times(1)).sendGreetingEmail(employee1);
+        verify(emailService, times(1)).sendGreetingEmail(employee2);
     }
 }
