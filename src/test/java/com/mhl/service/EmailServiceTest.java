@@ -5,7 +5,6 @@ import com.mhl.model.Employee;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 
-import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 public class EmailServiceTest extends MockitoTest {
@@ -23,6 +22,6 @@ public class EmailServiceTest extends MockitoTest {
         emailService.sendGreetingEmail(employee);
 
         // then
-       verify(employee, times(1)).getFirstName();
+        verify(employee, times(1)).getFirstName();
     }
 }
