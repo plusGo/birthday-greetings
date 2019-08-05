@@ -26,7 +26,7 @@ public class EmployeeService {
                 .collect(Collectors.toList());
     }
 
-    private List<Employee> loadAllEmployees() throws IOException {
+    public List<Employee> loadAllEmployees() throws IOException {
         final List<Employee> allEmployees = new ArrayList<>();
 
         final InputStream inputStream = Application.class.getClassLoader().getResourceAsStream("employee_records.txt");
