@@ -15,6 +15,7 @@ public class BirthdayGreetingsStarter {
     public void run() {
         try {
             employeeService.findEmployeesByBirthday(LocalDate.now().getDayOfYear())
+                    .parallelStream()
                     .forEach(emailService::sendGreetingEmail);
         } catch (Exception exception) {
             logger.error("birthday greeting task execute failed", exception);

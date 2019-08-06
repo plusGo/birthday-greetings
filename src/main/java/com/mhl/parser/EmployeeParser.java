@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class EmployeeParser {
-    public static Employee parseRecord(final String employeeRecord) {
-        List<String> employeeInfoList = Stream.of(employeeRecord.split(","))
+    public static Employee parseRecord(final String employeeLine) {
+        List<String> employeeInfoList = Stream.of(employeeLine.split(","))
                 .map(String::trim)
                 .collect(Collectors.toList());
 
