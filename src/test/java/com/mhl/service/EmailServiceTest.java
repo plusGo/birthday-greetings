@@ -5,8 +5,6 @@ import com.mhl.model.Employee;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 
-import static org.mockito.Mockito.*;
-
 public class EmailServiceTest extends MockitoTest {
     @InjectMocks
     private EmailService emailService;
@@ -14,14 +12,10 @@ public class EmailServiceTest extends MockitoTest {
     @Test
     public void should_send_greeting_email_success() {
         // given
-        final Employee employee = mock(Employee.class);
-        final String mockFirstName = "Jordan";
-        when(employee.getFirstName()).thenReturn(mockFirstName);
-
+        final Employee employee = new Employee();
         // when
         emailService.sendGreetingEmail(employee);
 
         // then
-        verify(employee, times(1)).getFirstName();
     }
 }

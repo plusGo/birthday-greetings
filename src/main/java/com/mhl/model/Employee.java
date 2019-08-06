@@ -1,6 +1,7 @@
 package com.mhl.model;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Employee {
     private String lastName;
@@ -8,37 +9,29 @@ public class Employee {
     private LocalDate dateOfBirth;
     private String email;
 
-    public String getLastName() {
-        return lastName;
+    public Employee() {
     }
 
-    public void setLastName(String lastName) {
+    public Employee(final String lastName, final String firstName, final String dateOfBirth, final String email) {
         this.lastName = lastName;
+        this.firstName = firstName;
+        this.dateOfBirth = LocalDate.parse(dateOfBirth, DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+        this.email = email;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public LocalDate getDateOfBirth() {
         return dateOfBirth;
-    }
-
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
     }
 
     public String getEmail() {
         return email;
     }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-
 }

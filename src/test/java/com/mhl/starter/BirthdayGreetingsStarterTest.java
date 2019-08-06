@@ -29,14 +29,14 @@ public class BirthdayGreetingsStarterTest extends MockitoTest {
         final Employee employee2 = new Employee();
         LocalDate localDate = LocalDate.now();
 
-        when(employeeService.findEmployeesByBirthday(localDate)).thenReturn(ImmutableList.of(employee1, employee2));
+        when(employeeService.findEmployeesByBirthday(localDate.getDayOfYear())).thenReturn(ImmutableList.of(employee1, employee2));
         doNothing().when(emailService).sendGreetingEmail(any(Employee.class));
 
         // when
         birthdayGreetingsStarter.run();
 
         // then
-        verify(employeeService, times(1)).findEmployeesByBirthday(localDate);
+        verify(employeeService, times(1)).findEmployeesByBirthday(localDate.getDayOfYear());
         verify(emailService, times(1)).sendGreetingEmail(employee1);
         verify(emailService, times(1)).sendGreetingEmail(employee2);
     }
