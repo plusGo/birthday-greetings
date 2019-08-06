@@ -1,3 +1,0 @@
-Doe, John, 1982/10/08, john.doe@foobar.com
-Ann, Mary, 1975/09/11, mary.ann@foobar.com
-Michale,Jordon,2019/08/03,jordan@foobar.com
