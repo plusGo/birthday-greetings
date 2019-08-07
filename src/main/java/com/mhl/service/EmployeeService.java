@@ -24,6 +24,9 @@ public class EmployeeService {
                 .collect(toList());
     }
 
+    /**
+     * 平年2月28日，应当作2月29日出生员工的生日
+    * */
     private boolean isBirthdayWhenLeapYearBorn(final Employee employee, final Integer dayOfYear) {
         final LocalDate birthday = employee.getDateOfBirth();
         return Objects.equals(birthday.getMonth(), Month.FEBRUARY)
