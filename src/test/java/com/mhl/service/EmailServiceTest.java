@@ -6,6 +6,8 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import static org.junit.Assert.assertTrue;
+
 @RunWith(MockitoJUnitRunner.class)
 public class EmailServiceTest {
     @InjectMocks
@@ -15,9 +17,11 @@ public class EmailServiceTest {
     public void should_send_greeting_email_success() {
         // given
         final Employee employee = new Employee();
+
         // when
-        emailService.sendGreetingEmail(employee);
+        final boolean sendEmailSuccess = emailService.sendGreetingEmail(employee);
 
         // then
+        assertTrue(sendEmailSuccess);
     }
 }
