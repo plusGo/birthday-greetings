@@ -1,11 +1,13 @@
 package com.mhl.service;
 
-import com.mhl.MockitoTest;
 import com.mhl.model.Employee;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
+import org.mockito.runners.MockitoJUnitRunner;
 
-public class EmailServiceTest extends MockitoTest {
+@RunWith(MockitoJUnitRunner.class)
+public class EmailServiceTest {
     @InjectMocks
     private EmailService emailService;
 
