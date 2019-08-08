@@ -20,6 +20,6 @@ public class EmployeeRepositoryTest {
         List<Employee> allEmployees = employeeRepository.findAll();
 
         // then
-        assertEquals(allEmployees.size(), 3);
+        assertEquals(allEmployees.size(), 4);
     }
 }

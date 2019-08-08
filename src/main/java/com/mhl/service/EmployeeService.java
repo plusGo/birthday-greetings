@@ -15,25 +15,28 @@ import static java.util.stream.Collectors.toList;
 public class EmployeeService {
     private EmployeeRepository employeeRepository = SingleBeanFactory.getEmployeeRepository();
 
-    public List<Employee> findEmployeesByBirthday(final Integer dayOfYear) throws IOException {
+    public List<Employee> findEmployeesByBirthday(final LocalDate birthday) throws IOException {
+        final Month month = birthday.getMonth();
+        final Integer dayOfMonth = birthday.getDayOfMonth();
+
         return employeeRepository.findAll()
                 .parallelStream()
-                .filter(employee -> Objects.equals(employee.getDateOfBirth().getDayOfYear(), dayOfYear) ||
-                        this.isBirthdayWhenLeapYearBorn(employee, dayOfYear)
-                )
+                .filter(employee -> Objects.equals(month, employee.getDateOfBirth().getMonth()))
+                .filter(employee -> {
+                    final LocalDate employeeBirthday = employee.getDateOfBirth();
+                    if (Objects.equals(employeeBirthday.getDayOfMonth(), dayOfMonth)) {
+                        return true;
+                    }
+
+                    /**
+                     * 平年2月28日，应当作2月29日出生员工的生日
+                     */
+                    return !LocalDate.now().isLeapYear()
+                            && Objects.equals(month, Month.FEBRUARY)
+                            && Objects.equals(dayOfMonth, 28)
+                            && Objects.equals(employeeBirthday.getDayOfMonth(), 29);
+                })
                 .collect(toList());
     }
-
-    /**
-     * 平年2月28日，应当作2月29日出生员工的生日
-    * */
-    private boolean isBirthdayWhenLeapYearBorn(final Employee employee, final Integer dayOfYear) {
-        final LocalDate birthday = employee.getDateOfBirth();
-        return Objects.equals(birthday.getMonth(), Month.FEBRUARY)
-                && Objects.equals(birthday.getDayOfMonth(), 29)
-                && !LocalDate.now().isLeapYear()
-                && Objects.equals(LocalDate.of(LocalDate.now().getYear(), 2, 28).getDayOfYear(), dayOfYear);
-    }
-
 
 }

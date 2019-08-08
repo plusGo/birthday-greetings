@@ -14,7 +14,7 @@ public class BirthdayGreetingsStarter {
 
     public void run() {
         try {
-            employeeService.findEmployeesByBirthday(LocalDate.now().getDayOfYear())
+            employeeService.findEmployeesByBirthday(LocalDate.now())
                     .parallelStream()
                     .forEach(emailService::sendGreetingEmail);
         } catch (Exception exception) {

@@ -31,12 +31,12 @@ public class BirthdayGreetingsStarterTest {
         final Employee employee2 = new Employee();
         LocalDate localDate = LocalDate.now();
 
-        when(employeeService.findEmployeesByBirthday(localDate.getDayOfYear())).thenReturn(ImmutableList.of(employee1, employee2));
+        when(employeeService.findEmployeesByBirthday(localDate)).thenReturn(ImmutableList.of(employee1, employee2));
         // when
         birthdayGreetingsStarter.run();
 
         // then
-        verify(employeeService, times(1)).findEmployeesByBirthday(localDate.getDayOfYear());
+        verify(employeeService, times(1)).findEmployeesByBirthday(localDate);
         verify(emailService, times(1)).sendGreetingEmail(employee1);
         verify(emailService, times(1)).sendGreetingEmail(employee2);
     }
