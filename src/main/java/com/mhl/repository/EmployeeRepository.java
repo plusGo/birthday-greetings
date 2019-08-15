@@ -13,7 +13,8 @@ import static com.google.common.io.Resources.getResource;
 
 public class EmployeeRepository {
     public List<Employee> findAll() throws IOException {
-        return asCharSource(getResource("employee_records.txt"), Charsets.UTF_8).readLines()
+        return asCharSource(getResource("employee_records.txt"), Charsets.UTF_8)
+                .readLines()
                 .parallelStream()
                 .map(EmployeeParser::parseRecord)
                 .collect(Collectors.toList());

@@ -28,9 +28,6 @@ public class EmployeeService {
                         return true;
                     }
 
-                    /**
-                     * 平年2月28日，应当作2月29日出生员工的生日
-                     */
                     return !LocalDate.now().isLeapYear()
                             && Objects.equals(month, Month.FEBRUARY)
                             && Objects.equals(dayOfMonth, 28)
