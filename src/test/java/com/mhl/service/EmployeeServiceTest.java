@@ -30,7 +30,7 @@ public class EmployeeServiceTest {
 
         // then
         assertNotNull(employeesByBirthday);
-        assertEquals(employeesByBirthday.size(), 1);
+        assertEquals(employeesByBirthday.size(), 0);
     }
 
     @Test

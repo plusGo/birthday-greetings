@@ -1,7 +1,7 @@
 plugins {
     id 'java'
 }
-
+apply from: 'gradle/checkstyle.gradle'
 group 'com.mhl'
 version '1.0-SNAPSHOT'
 
