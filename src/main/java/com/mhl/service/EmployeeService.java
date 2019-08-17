@@ -27,7 +27,6 @@ public class EmployeeService {
                     if (Objects.equals(employeeBirthday.getDayOfMonth(), dayOfMonth)) {
                         return true;
                     }
-
                     return !LocalDate.now().isLeapYear()
                             && Objects.equals(month, Month.FEBRUARY)
                             && Objects.equals(dayOfMonth, 28)

@@ -1,16 +1,16 @@
 package com.mhl.parser;
 
+import com.google.common.base.Splitter;
 import com.mhl.model.Employee;
 
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class EmployeeParser {
     public static Employee parseRecord(final String employeeLine) {
-        List<String> employeeInfoList = Stream.of(employeeLine.split(","))
-                .map(String::trim)
-                .collect(Collectors.toList());
+        final List<String> employeeInfoList = Splitter.on(",")
+                .omitEmptyStrings()
+                .trimResults()
+                .splitToList(employeeLine);
 
         return new Employee(
                 employeeInfoList.get(0),
